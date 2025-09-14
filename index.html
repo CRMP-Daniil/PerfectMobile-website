@@ -4,45 +4,102 @@
   <meta charset="UTF-8">
   <title>PerfectMobile RP</title>
   <style>
-    body { font-family: Arial, sans-serif; background: #111; color: #fff; margin: 0; }
-    header { background: #e63946; padding: 20px; text-align: center; }
-    header h1 { margin: 0; font-size: 36px; }
-    nav { margin-top: 10px; }
-    nav a { color: #fff; margin: 0 10px; text-decoration: none; font-weight: bold; }
-    nav a:hover { text-decoration: underline; }
+    body {
+      font-family: Arial, sans-serif;
+      background: #111;
+      color: #fff;
+      margin: 0;
+      scroll-behavior: smooth;
+    }
 
-    section { padding: 20px; }
+    header {
+      background: #e63946;
+      padding: 20px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
 
-    .news { background: #222; padding: 15px; margin: 10px 0; border-radius: 8px; }
+    header h1 {
+      margin: 0;
+      font-size: 36px;
+    }
 
-    .contact-links a,
-    .discord-links a {
-      color: #f1fa8c;
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: #fff;
+      margin: 0 10px;
       text-decoration: none;
       font-weight: bold;
     }
 
-    .contact-links a:hover,
-    .discord-links a:hover {
+    nav a:hover {
       text-decoration: underline;
     }
 
-    .contact-links p,
-    .discord-links p {
-      margin: 8px 0;
+    section {
+      padding: 40px 20px;
     }
 
-    footer { background: #333; text-align: center; padding: 10px; font-size: 14px; }
+    .news {
+      background: #222;
+      padding: 15px;
+      margin: 10px 0;
+      border-radius: 8px;
+    }
+
+    footer {
+      background: #333;
+      text-align: center;
+      padding: 10px;
+      font-size: 14px;
+    }
+
+    /* --- Контакты --- */
+    .contact-box {
+      background: #222;
+      padding: 20px;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .contact-method {
+      background: #333;
+      padding: 15px;
+      border-radius: 8px;
+    }
+
+    .contact-method p {
+      margin: 0 0 5px;
+      font-size: 16px;
+      color: #f1fa8c;
+    }
+
+    .contact-method a {
+      color: #00bcd4;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .contact-method a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
 
+  <!-- Шапка -->
   <header>
     <h1>PerfectMobile RP</h1>
     <nav>
       <a href="#home">Главная</a>
-      <a href="#news">Новости</a>
-      <a href="#discord">Discord</a>
       <a href="#contacts">Контакты</a>
     </nav>
   </header>
@@ -54,37 +111,22 @@
        Присоединяйся и стань частью нашего мира!</p>
   </section>
 
-  <!-- Новости -->
-  <section id="news">
-    <h2>Новости</h2>
-    <div class="news">
-      <h3>🎉 Запуск проекта</h3>
-      <p>Мы только начали свой путь! Следи за обновлениями здесь.</p>
-    </div>
-  </section>
-
-  <!-- Discord -->
-  <section id="discord">
-    <h2>Наш Discord-сервер</h2>
-    <div class="discord-links">
-      <p>💬 Присоединяйся к нашему сообществу!</p>
-      <p>👉 <a href="https://discord.gg/yourserverlink" target="_blank">Войти в Discord</a></p>
-      <p>На сервере ты найдешь:</p>
-      <ul>
-        <li>Актуальные новости проекта</li>
-        <li>Чат с участниками</li>
-        <li>Поддержку от админов</li>
-      </ul>
-    </div>
-  </section>
-
   <!-- Контакты -->
   <section id="contacts">
     <h2>Контакты</h2>
-    <div class="contact-links">
-      <p>📞 <a href="https://t.me/yourtelegramusername" target="_blank">Связаться через Telegram</a></p>
-      <p>💬 <a href="https://discord.gg/yourserverlink" target="_blank">Присоединиться к Discord</a></p>
-      <p>📱 <a href="https://wa.me/79991234567" target="_blank">Написать в WhatsApp</a></p>
+    <div class="contact-box">
+      <div class="contact-method">
+        <p>📞 Telegram</p>
+        <a href="https://t.me/Daniil_Partizan0v" target="_blank">Написать в Telegram</a> 
+      </div>
+      <div class="contact-method">
+        <p>💬 Discord</p>
+        <a href="https://discord.gg/gnHfbXUXKn" target="_blank">Присоединиться в Discord</a> 
+      </div>
+      <div class="contact-method">
+        <p>📱 WhatsApp</p>
+        <a href="https://wa.me/380684387833" target="_blank">Написать в WhatsApp</a> 
+      </div>
     </div>
   </section>
 
