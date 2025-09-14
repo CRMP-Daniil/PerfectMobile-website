@@ -10,29 +10,52 @@
     nav { margin-top: 10px; }
     nav a { color: #fff; margin: 0 10px; text-decoration: none; font-weight: bold; }
     nav a:hover { text-decoration: underline; }
+
     section { padding: 20px; }
+
     .news { background: #222; padding: 15px; margin: 10px 0; border-radius: 8px; }
+
+    .contact-links a,
+    .discord-links a {
+      color: #f1fa8c;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .contact-links a:hover,
+    .discord-links a:hover {
+      text-decoration: underline;
+    }
+
+    .contact-links p,
+    .discord-links p {
+      margin: 8px 0;
+    }
+
     footer { background: #333; text-align: center; padding: 10px; font-size: 14px; }
   </style>
 </head>
 <body>
+
   <header>
     <h1>PerfectMobile RP</h1>
     <nav>
-      <a href="#">Главная</a>
-      <a href="#">Новости</a>
-      <a href="https://discord.gg/ВСТАВЬ_ССЫЛКУ" target="_blank">Discord</a>
-      <a href="#">Контакты</a>
+      <a href="#home">Главная</a>
+      <a href="#news">Новости</a>
+      <a href="#discord">Discord</a>
+      <a href="#contacts">Контакты</a>
     </nav>
   </header>
 
-  <section>
+  <!-- Главная -->
+  <section id="home">
     <h2>Добро пожаловать!</h2>
     <p>PerfectMobile RP — это уникальный мобильный проект в стиле RP. 
        Присоединяйся и стань частью нашего мира!</p>
   </section>
 
-  <section>
+  <!-- Новости -->
+  <section id="news">
     <h2>Новости</h2>
     <div class="news">
       <h3>🎉 Запуск проекта</h3>
@@ -40,8 +63,35 @@
     </div>
   </section>
 
+  <!-- Discord -->
+  <section id="discord">
+    <h2>Наш Discord-сервер</h2>
+    <div class="discord-links">
+      <p>💬 Присоединяйся к нашему сообществу!</p>
+      <p>👉 <a href="https://discord.gg/yourserverlink" target="_blank">Войти в Discord</a></p>
+      <p>На сервере ты найдешь:</p>
+      <ul>
+        <li>Актуальные новости проекта</li>
+        <li>Чат с участниками</li>
+        <li>Поддержку от админов</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Контакты -->
+  <section id="contacts">
+    <h2>Контакты</h2>
+    <div class="contact-links">
+      <p>📞 <a href="https://t.me/yourtelegramusername" target="_blank">Связаться через Telegram</a></p>
+      <p>💬 <a href="https://discord.gg/yourserverlink" target="_blank">Присоединиться к Discord</a></p>
+      <p>📱 <a href="https://wa.me/79991234567" target="_blank">Написать в WhatsApp</a></p>
+    </div>
+  </section>
+
+  <!-- Подвал -->
   <footer>
     <p>© 2025 PerfectMobile RP. Все права защищены.</p>
   </footer>
+
 </body>
 </html>
